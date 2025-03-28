@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matt Fortitude">
+    <meta name="organization" content="Fortitude Developments">
+    <meta name="description" content="The official Fortitude Developments GitHub Pages website.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#141414">
+    
+    <script>
+        fetch("https://dev-fortitude.github.io/Website/assets/json/keywords.json")
+            .then(response => response.json())
+            .then(data => {
+                let metaTag = document.createElement("meta");
+                metaTag.name = "keywords";
+                metaTag.content = data.keywords.join(", ");
+                document.head.appendChild(metaTag);
+            })
+            .catch(error => console.error("Error loading keywords:", error));
+    </script>
+
+    <meta property="og:title" content="Fortitude Developments">
+    <meta property="og:description" content="The official Fortitude Developments GitHub Pages website.">
+    <meta property="og:url" content="https://dev-fortitude.github.io/Website">
+    <meta property="og:image" content="https://dev-fortitude.github.io/Website/assets/branding/preview.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="https://dev-fortitude.github.io/Website/assets/branding/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://dev-fortitude.github.io/Website/assets/css/ux.css">
+    <link rel="stylesheet" href="https://dev-fortitude.github.io/Website/assets/css/scrollbar.css">
+
+    <script src="https://dev-fortitude.github.io/Website/assets/js/browser-checking.js" defer></script>
+    <script src="https://dev-fortitude.github.io/Website/assets/js/activity-detection.js" defer></script>
+    <script src="https://dev-fortitude.github.io/Website/assets/js/analytics.js" defer></script>
+    <script src="https://dev-fortitude.github.io/Website/assets/js/debugging.js" defer></script>
+
+    <link rel="manifest" href="https://dev-fortitude.github.io/Website/assets/json/manifest.json">
+
+    <script>
+        const userAgent = navigator.userAgent.toLowerCase();
+        const blockedBots = [
+            "bot", "spider", "crawl", "slurp", "wget", "curl", "scrapy", "python", "java"
+        ];
+        if (blockedBots.some(bot => userAgent.includes(bot))) {
+            document.body.innerHTML = "<h1>Access Denied</h1><p>Bots are not allowed on this site.</p>";
+            document.body.style.textAlign = "center";
+        }
+    </script>
+
+    <meta name="language" content="English">
+    <meta name="theme" content="dark">
+
+    <title>Fortitude Developments</title>
+</head>
+
+</html>
