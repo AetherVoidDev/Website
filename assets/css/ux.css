@@ -65,19 +65,6 @@ img:hover {
     transform: scale(1.05);
 }
 
-input, textarea {
-    background: #1e1e1e;
-    color: white;
-    border: 1px solid #444;
-    padding: 10px;
-    font-size: 16px;
-}
-
-input:focus, textarea:focus {
-    border-color: #00bcd4;
-    box-shadow: 0px 0px 10px rgba(0, 188, 212, 0.5);
-}
-
 .footer, .navbar {
     transition: background 0.3s ease;
 }
