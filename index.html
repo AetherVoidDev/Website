@@ -55,6 +55,117 @@
     <meta name="theme" content="dark">
 
     <title>Checking Browser...</title>
-</head>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .preloader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .loading-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 6px solid transparent;
+            border-top: 6px solid white;
+            border-right: 6px solid white;
+            animation: spin 1s linear infinite;
+        }
+
+        .loading-icon {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+        }
+
+        h4 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .loading-container {
+                width: 70px;
+                height: 70px;
+            }
+
+            .loading-circle {
+                width: 70px;
+                height: 70px;
+                border-width: 4px;
+            }
+
+            .loading-icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading-circle"></div>
+            <img src="#" alt="Loading Icon" class="loading-icon">
+        </div>
+        <h4>Checking browser</h4>
+        <p>Verifying You're Human, please wait...</p>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "https://dev-fortitude.github.io/Website/website/home.html";
+        }, 3000);
+    </script>
+</body>
 </html>
