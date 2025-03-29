@@ -6,7 +6,7 @@
 | Mobile app status   | 📵 Unavailable   |
 | Total repository visits   | 👀 5   |
 | Licenses   | ⛔ None  |
-| Completed   | 🔢 2.8%  |
+| Completed   | 🔢 3%  |
 
 ---
 
