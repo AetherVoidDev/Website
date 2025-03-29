@@ -4,7 +4,7 @@
 | Website status   | 🟢 Online   |
 | Repository size   | 🤔 Unknown   |
 | Mobile app status   | 📵 Unavailable   |
-| Total repository visits   | 👀 3   |
+| Total repository visits   | 👀 5   |
 | Licenses   | ⛔ None  |
 
 ---
