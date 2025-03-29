@@ -2,7 +2,7 @@
 | Statistic | Value |
 |----------|----------|
 | Website status   | 🟢 Online   |
-| Repository size   | 🤔 Unknown   |
+| Repository size   | 📁 481KB   |
 | Mobile app status   | 📵 Unavailable   |
 | Total repository visits   | 👀 5   |
 | Licenses   | ⛔ None  |
