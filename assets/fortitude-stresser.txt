@@ -1,0 +1,47 @@
+ATTACK CONFIGURATION
+- IP address / hostname
+- Port
+- Attack layer
+- Attack method
+- Spoofing
+- Attack duration
+
+ATTACK LAYERS
+- 4
+- 7
+
+ATTACK METHODS
+- SYN Flood (4)  
+- UDP Flood (4)  
+- ICMP Flood (4)  
+- NTP Amplification (4)  
+- SSDP Amplification (4)  
+- RST Flood (4)  
+- TCP Flood (4)  
+- SMURF Attack (4)  
+- Ping Of Death (4)  
+- DNS Reflection (4)  
+- CharGen Amplification (4)  
+- ARP Spoofing (4)  
+- GTP Flood (4)  
+- GRE Flood (4)  
+- BGP Hijacking (4)  
+- TCP ACK Flood (4)  
+- Teardrop Attack (4)  
+- Land Attack (4)  
+- TFTP Flood (4)  
+- Ping Flood (4)  
+- Reflective DOS (4)  
+- TCP SYN-ACK Flood (4)  
+- HTTP Flood (7)  
+- HTTPS Flood (7)  
+- SlowLoris (7)  
+- DNS Amplification (7)  
+- DNS Water Torture (7)  
+- Botnet DDOS (4/7)  
+- HTTP POST Flood (7)  
+- SIP Flood (7)  
+- Bit-And-Byte Flood (7)  
+- XML Bomb (7)  
+- DNS Query Flood (7)  
+- Zero-day DDOS (4/7)

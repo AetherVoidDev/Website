@@ -1,0 +1,9 @@
+- Cut
+- Mute
+- Crop
+- Change speed
+- Upscale video quality
+- Upscale bitrate
+- Add effects
+- Add overlay
+- Add watermark

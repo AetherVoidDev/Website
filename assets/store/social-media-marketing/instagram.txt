@@ -1,0 +1,10 @@
+- Accounts
+- Post views
+- Post likes
+- Post comments
+- Post shares
+- DM messages
+- DM message requests
+- Group messages
+- Followers
+- Profile shares

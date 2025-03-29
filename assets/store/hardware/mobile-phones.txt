@@ -1,0 +1,17 @@
+- Samsung
+  - Samsung Galaxy A40
+  - Samsung Galaxy A52
+  - Samsung Galaxy S6
+  - Samsung Galaxy S10
+  - Samsung Galaxy S20
+  - Samsung Galaxy S21
+  - Samsung Galaxy S22
+  - Samsung Galaxy S23
+  - Samsung Galaxy S24
+  - Samsung Galaxy S25
+
+- iPhone
+  - iPhone XR
+  - iPhone 12
+  - iPhone 14
+  - iPhone 16

@@ -1,0 +1,10 @@
+- Crop
+- Add text
+- Resize
+- Upscale
+- Blur
+- Sharpen
+- Change colour
+- Round corners
+- Cut shape
+- Add effects
