@@ -54,7 +54,412 @@
     <meta name="language" content="English">
     <meta name="theme" content="dark">
 
-    <title>PS4 Mods, Cheats & Exploits</title>
-</head>
+    <title>Download PS4 Mods</title>
 
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #141414;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    z-index: 1001;
+    transition: opacity 0.3s ease;
+}
+
+.popup.open {
+    display: block;
+    opacity: 1;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-header div {
+    font-weight: bold;
+}
+
+.popup-header img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.input-bar {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    height: 20px;
+    width: 94%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-bar input {
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.input-bar img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.overlay.open {
+    display: block;
+}
+
+.side-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #2b2b2b;
+    z-index: 1001;
+    transition: right 0.3s ease;
+}
+
+.side-menu.open {
+    display: block;
+    right: 0;
+}
+
+.side-menu .side-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #2b2b2b;
+    pointer-events: none;
+}
+
+.side-menu .side-header img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.side-menu div {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.side-menu div:hover {
+    background-color: #333;
+}
+
+.side-menu .menu-option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.side-menu .menu-option img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.no-link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.side-menu .side-header div:hover,
+.side-menu .side-header img:hover {
+    background-color: transparent;
+}
+
+.side-menu .side-header:hover {
+    background-color: #2b2b2b;
+}
+
+.side-menu .side-header img {
+    pointer-events: auto;
+}
+
+.side-menu div:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-icons img {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px;
+    }
+
+    .popup {
+        width: 280px;
+    }
+
+    .side-menu {
+        width: 200px;
+    }
+
+    .side-menu div {
+        padding: 8px 12px;
+    }
+
+    .side-menu .menu-option img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .input-bar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-icons img {
+        width: 18px;
+        height: 18px;
+        margin: 0 10px;
+    }
+
+    .popup {
+        width: 250px;
+    }
+
+    .side-menu {
+        width: 180px;
+    }
+
+    .side-menu div {
+        padding: 6px 10px;
+    }
+
+    .side-menu .menu-option img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 8px 0;
+    }
+
+    .input-bar {
+        width: 85%;
+    }
+}
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-icons">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/home.png" onclick="location.href='#'">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/search.png" onclick="openPopup()">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/menu.png" onclick="toggleSideMenu()">
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <div>Search</div>
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/close.png" onclick="closePopup()" alt="Close">
+        </div>
+        <div class="input-bar">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/search.png" alt="Icon">
+            <input type="text" placeholder="Search content, downloads & more...">
+        </div>
+    </div>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="side-header">
+            <div>Menu</div>
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/close.png" class="close-btn" onclick="closeSideMenu()">
+        </div>
+        
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/projects.png" alt="#"> Projects
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/downloads.png" alt="#"> Downloads
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/tools.png" alt="#"> Tools
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/store.png" alt="#"> Store
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/music.png" alt="#"> Music
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-ai.png" alt="#"> Fortitude AI
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-stresser.png" alt="#"> Fortitude Stresser
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-app.png" alt="#"> Fortitude App
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/useful-links.png" alt="#"> Useful Links
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/info.png" alt="#"> Info
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/account.png" alt="#"> Account
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/settings.png" alt="#"> Settings
+            </div>
+        </a>
+    </div>
+
+    <div class="footer">
+        &copy; Fortitude Developments 2025. All rights reserved.
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').classList.add('open');
+            document.getElementById('overlay').classList.add('open');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.remove('open');
+            document.getElementById('overlay').classList.remove('open');
+        }
+
+        function toggleSideMenu() {
+            let sideMenu = document.getElementById('sideMenu');
+            if (sideMenu.classList.contains('open')) {
+                closeSideMenu();
+            } else {
+                sideMenu.classList.add('open');
+            }
+        }
+
+        function closeSideMenu() {
+            document.getElementById('sideMenu').classList.remove('open');
+        }
+    </script>
+</body>
 </html>
