@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/1cd9f232-966b-4610-8155-41fc8c39c2cc)
+
 ### Statistics
 | Statistic | Value |
 |----------|----------|
