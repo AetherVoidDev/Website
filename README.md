@@ -1,6 +1,11 @@
-![image](https://github.com/user-attachments/assets/1cd9f232-966b-4610-8155-41fc8c39c2cc)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1cd9f232-966b-4610-8155-41fc8c39c2cc" alt="image">
+</p>
 
-### Statistics
+<h3 align="center">Statistics</h3>
+
+<div align="center">
+
 | Statistic | Value |
 |----------|----------|
 | Website status   | 🟢 Online   |
@@ -10,15 +15,25 @@
 | Licenses   | ⛔ None  |
 | Completed   | 🔢 3.5%  |
 
----
-
-### Download The App
-[Android](https://github.com/dev-fortitude/Website/releases/download/1.0.0/Fortitude-App.apk)
+</div>
 
 ---
 
-### Official Documentation
-[Terms Of Service](https://google.com/404)  
-[Code Of Conduct](https://google.com/404)  
-[Privacy Policy](https://google.com/404)  
-[Legality](https://google.com/404)  
+<h3 align="center">Download The App</h3>
+
+<p align="center">
+  <a href="https://github.com/dev-fortitude/Website/releases/download/1.0.0/Fortitude-App.apk">
+    Android
+  </a>
+</p>
+
+---
+
+<h3 align="center">Official Documentation</h3>
+
+<p align="center">
+  <a href="https://google.com/404">Terms Of Service</a> • 
+  <a href="https://google.com/404">Code Of Conduct</a> • 
+  <a href="https://google.com/404">Privacy Policy</a> • 
+  <a href="https://google.com/404">Legality</a>
+</p>
