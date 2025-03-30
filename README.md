@@ -3,10 +3,15 @@
 |----------|----------|
 | Website status   | 🟢 Online   |
 | Repository size   | 📁 586KB   |
-| Mobile app status   | 📵 Unavailable   |
+| Mobile app status   | 🟢 Available   |
 | Total repository visits   | 👀 9   |
 | Licenses   | ⛔ None  |
 | Completed   | 🔢 3.5%  |
+
+---
+
+### Download The App
+[Android](https://github.com/dev-fortitude/Website/releases/download/1.0.0/Fortitude-App.apk)
 
 ---
 
