@@ -54,7 +54,7 @@
     <meta name="language" content="English">
     <meta name="theme" content="dark">
 
-    <title>Download PS5 Mods</title>
+    <title>PS5 Mods</title>
 
 <style>
 body {
@@ -170,18 +170,21 @@ body {
 .side-menu {
     display: none;
     position: fixed;
-    top: 0;
-    right: -250px;
+    top: 10px;
+    right: -260px;
     width: 250px;
-    height: 100%;
+    height: calc(97% - 20px);
     background-color: #2b2b2b;
     z-index: 1001;
     transition: right 0.3s ease;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .side-menu.open {
     display: block;
-    right: 0;
+    right: 10px;
 }
 
 .side-menu .side-header {
@@ -192,6 +195,7 @@ body {
     font-weight: bold;
     background-color: #2b2b2b;
     pointer-events: none;
+    border-radius: 12px;
 }
 
 .side-menu .side-header img {
@@ -219,6 +223,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 8px;
 }
 
 .side-menu .menu-option img {
@@ -360,75 +365,81 @@ body {
             <img src="https://dev-fortitude.github.io/Website/assets/icons/close.png" class="close-btn" onclick="closeSideMenu()">
         </div>
         
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/projects/explore.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/projects.png" alt="#"> Projects
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/projects.png" alt="Projects"> Projects
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/downloads/explore.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/downloads.png" alt="#"> Downloads
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/downloads.png" alt="Downloads"> Downloads
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/tools/explore.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/tools.png" alt="#"> Tools
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/tools.png" alt="Tools"> Tools
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/store/explore.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/store.png" alt="#"> Store
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/store.png" alt="Store"> Store
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/music.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/music.png" alt="#"> Music
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/music.png" alt="Music"> Music
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/fortitude-ai/chat.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-ai.png" alt="#"> Fortitude AI
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-ai.png" alt="FortitudeAI"> Fortitude AI
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/fortitude-stresser.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-stresser.png" alt="#"> Fortitude Stresser
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-stresser.png" alt="FortitudeStresser"> Fortitude Stresser
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/app-download.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-app.png" alt="#"> Fortitude App
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/fortitude-app.png" alt="FortitudeApp"> Fortitude App
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/useful-links.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/useful-links.png" alt="#"> Useful Links
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/useful-links.png" alt="UsefulLinks"> Useful Links
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/info/about.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/info.png" alt="#"> Info
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/info.png" alt="Info"> Info
+            </div>
+        </a>
+        
+        <a href="https://dev-fortitude.github.io/Website/website/more/explore.html" target="_blank" class="no-link-style">
+            <div class="menu-option">
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/more.png" alt="More"> More
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/account/management.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/account.png" alt="#"> Account
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/account.png" alt="Account"> Account
             </div>
         </a>
 
-        <a href="#" target="_blank" class="no-link-style">
+        <a href="https://dev-fortitude.github.io/Website/website/settings.html" target="_blank" class="no-link-style">
             <div class="menu-option">
-                <img src="https://dev-fortitude.github.io/Website/assets/icons/settings.png" alt="#"> Settings
+                <img src="https://dev-fortitude.github.io/Website/assets/icons/settings.png" alt="Settings"> Settings
             </div>
         </a>
     </div>
