@@ -15,17 +15,17 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-button, a, select, input, textarea {
+button, a, select {
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     border-radius: 8px;
 }
 
-button:hover, a:hover, select:hover, input:hover, textarea:hover {
+button:hover, a:hover, select:hover {
     transform: translateY(-2px);
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-button:active, a:active, select:active, input:active, textarea:active {
+button:active, a:active, select:active {
     transform: translateY(1px);
     box-shadow: none;
 }
@@ -71,6 +71,12 @@ input, textarea {
     border: 1px solid #444;
     padding: 10px;
     font-size: 16px;
+    transition: none;
+}
+
+input:hover, textarea:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 input:focus, textarea:focus {
