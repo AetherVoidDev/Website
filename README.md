@@ -11,11 +11,11 @@
 | Statistic | Value |
 |----------|----------|
 | Website status   | 🟢 Online   |
-| Repository size   | 📁 586KB   |
+| Repository size   | 📁 678KB   |
 | Mobile app status   | 🟢 Available   |
 | Total repository visits   | 👀 9   |
 | Licenses   | ⛔ None  |
-| Completed   | 🔢 3.5%  |
+| Completed   | 🔢 3.8%  |
 
 </div>
 
