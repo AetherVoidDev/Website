@@ -2,6 +2,8 @@
   <img src="https://github.com/user-attachments/assets/1cd9f232-966b-4610-8155-41fc8c39c2cc" alt="image">
 </p>
 
+<br>  
+
 <h3 align="center">Statistics</h3>
 
 <div align="center">
@@ -17,7 +19,11 @@
 
 </div>
 
+<br>  
+
 ---
+
+<br>  
 
 <h3 align="center">Download The App</h3>
 
@@ -27,7 +33,11 @@
   </a>
 </p>
 
+<br>  
+
 ---
+
+<br>  
 
 <h3 align="center">Official Documentation</h3>
 
