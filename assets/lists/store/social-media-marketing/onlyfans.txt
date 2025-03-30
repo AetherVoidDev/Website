@@ -1,0 +1,2 @@
+- Video views
+- Post views

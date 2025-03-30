@@ -1,0 +1,9 @@
+- Flipper Zero
+- WiFi adpater
+- Bluetooth adapter
+
+- Router
+  - Eero
+  - Sky
+  - Virgin Media
+  - BT

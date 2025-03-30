@@ -1,0 +1,31 @@
+PUFF AMOUNT
+- 600
+- 1K
+- 1.2K
+- 2K
+- 2.4K
+- 3K
+- 3.5K
+- 4K
+- 5K
+- 6K
+- 7K
+- 7.5K
+- 8K
+- 9K
+- 10K
+- 12K
+- 15K
+- 18K
+- 20K
+- 25K
+
+BRANDS
+- IVG
+- Fuji
+- SVL
+- GeekBar
+- Crystal
+- Hayati
+- ElfBar
+- Blu

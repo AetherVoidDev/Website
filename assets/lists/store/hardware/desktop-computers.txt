@@ -1,0 +1,6 @@
+- Budget PC
+- Medium-end PC
+- High-end PC
+- Hardcore PC
+- Business PC
+- Enterprise PC

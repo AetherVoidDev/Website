@@ -1,0 +1,7 @@
+THEMING
+- Preset theme (light / dark)
+- Custom theming
+
+MEMORY
+- Archive memories
+- Delete memories

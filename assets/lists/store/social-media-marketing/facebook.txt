@@ -1,0 +1,7 @@
+- Friends
+- Friend requests
+- Post views
+- Post likes
+- Post comments
+- Post shares
+- Accounts
