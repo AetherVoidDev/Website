@@ -14,7 +14,7 @@
 | Repository size   | 📁 22.1MB   |
 | Mobile app status   | 🟢 Available   |
 | Total repository visits   | 👀 13   |
-| Licenses   | MIT, GPL & Apache  |
+| Licenses   | 📚 MIT, GPL & Apache  |
 | Completed   | 🔢 4.0%  |
 
 </div>
