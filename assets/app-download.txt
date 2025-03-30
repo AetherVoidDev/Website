@@ -1,5 +1,0 @@
-- Windows (7, 8, 10 & 11)
-- MacOS (10.4+)
-- Linux (Ubuntu, Debian, Arch, Kali & ParrotOS)
-- Android (5.0+)
-- IOS (8.0+)

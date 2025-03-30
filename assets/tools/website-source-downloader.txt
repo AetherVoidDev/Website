@@ -1,9 +1,0 @@
-- HTML4, HTML5
-- PHP
-- CSS, SASS, TailWind
-- Python
-- SQL, MySQL, SQL-Lite
-- ES3, JavaScript
-- Image files (all)
-- Video files (all)
-- Audio files (all)

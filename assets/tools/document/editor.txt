@@ -1,4 +1,0 @@
-- WordWrap
-- Highlight text
-- Hyperlink colour
-- Interactive elements

@@ -1,5 +1,0 @@
-- Post views
-- Post likes
-- Post comments
-- Post re-tweets
-- Post shares
