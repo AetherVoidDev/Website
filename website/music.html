@@ -231,6 +231,51 @@ body {
     width: 20px;
     height: 20px;
 }
+    
+.audio-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+}
+
+.audio-bar {
+    background: #252525;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audio-left {
+    display: flex;
+    align-items: center;
+}
+
+.audio-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.audio-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.audio-right {
+    display: flex;
+    gap: 10px;
+}
+
+.play-icon, .download-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
 
 .footer {
     background-color: #1e1e1e;
@@ -443,6 +488,36 @@ body {
             </div>
         </a>
     </div>
+    
+        <div class="audio-container">
+        <div class="audio-bar">
+            <div class="audio-left">
+                <img src="#" class="audio-icon">
+                <span class="audio-title">{External.Audio.File();}</span>
+            </div>
+            <div class="audio-right">
+                <img src="#" class="play-icon" onclick="playAudio('#')">
+                <a href="#" download>
+                    <img src="#" class="download-icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="audio-bar">
+            <div class="audio-left">
+                <img src="icon2.png" class="audio-icon">
+                <span class="audio-title">{External.Audio.File();}</span>
+            </div>
+            <div class="audio-right">
+                <img src="#" class="play-icon" onclick="playAudio('#')">
+                <a href="#" download>
+                    <img src="#" class="download-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
 
     <div class="footer">
         &copy; Fortitude Developments 2025. All rights reserved.
@@ -471,6 +546,12 @@ body {
         function closeSideMenu() {
             document.getElementById('sideMenu').classList.remove('open');
         }
+        
+        function playAudio(audioFile) {
+       let audioPlayer = document.getElementById("audio-player");
+       audioPlayer.src = audioFile;
+       audioPlayer.play();
+}
     </script>
 </body>
 </html>

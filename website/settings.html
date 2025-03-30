@@ -231,6 +231,91 @@ body {
     width: 20px;
     height: 20px;
 }
+    
+.settings-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+}
+
+.setting-bar {
+    background: #252525;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.setting-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.setting-left {
+    display: flex;
+    align-items: center;
+}
+
+.setting-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.setting-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.custom-dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+.setting-description {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.save-button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #141414;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+}
 
 .footer {
     background-color: #1e1e1e;
@@ -443,6 +528,71 @@ body {
             </div>
         </a>
     </div>
+    
+        <div class="settings-container">
+        <div class="setting-bar">
+            <img src="#" class="setting-icon">
+            <span class="setting-title">Theming</span>
+            <select class="custom-dropdown">
+                <option>System</option>
+                <option>Light</option>
+                <option>Dark</option>
+                <option>MidNight</option>
+                <option>Custom background (solid)</option>
+                <option>Custom background (gradient)</option>
+                <option>Custom accent (solid)</option>
+                <option>Custom accent (gradient)</option>
+                <option>Icon style</option>
+            </select>
+            <p class="setting-description">Customise Your theme and icon style.</p>
+        </div>
+        
+        <div class="setting-bar">
+            <img src="#" class="setting-icon">
+            <span class="setting-title">Background music</span>
+            <select class="custom-dropdown">
+                <option>Enabled</option>
+                <option>Disabled</option>
+            </select>
+            <p class="setting-description">Play music in the background (preset, via URL or from file).</p>
+        </div>
+        
+        <div class="setting-bar">
+            <img src="#" class="setting-icon">
+            <span class="setting-title">Language</span>
+            <select class="custom-dropdown">
+                <option>English</option>
+                <option>French</option>
+                <option>German</option>
+                <option>Spanish</option>
+                <option>Russian</option>
+                <option>Chinese</option>
+                <option>Japanese</option>
+            </select>
+            <p class="setting-description">Choose Your preffered language.</p>
+        </div>
+        
+        <div class="setting-bar">
+            <img src="#" class="setting-icon">
+            <span class="setting-title">Analytics</span>
+            <select class="custom-dropdown">
+                <option>None</option>
+                <option>IP address</option>
+                <option>General location</option>
+                <option>WebKit info</option>
+                <option>UserAgent info</option>
+                <option>Device info</option>
+                <option>Browser info</option>
+            </select>
+            <p class="setting-description">Choose what data You're alright with Us collecting.</p>
+        </div>
+        
+        <button class="save-button" onclick="showPopup()">Save Changes</button>
+    </div>
+    
+    <br>
+
+    <div id="saved" class="popup">Changes Saved Successfully!</div>
 
     <div class="footer">
         &copy; Fortitude Developments 2025. All rights reserved.
@@ -471,6 +621,16 @@ body {
         function closeSideMenu() {
             document.getElementById('sideMenu').classList.remove('open');
         }
+        
+        function showPopup() {
+    let popup = document.getElementById("saved");
+    popup.style.display = "block";
+
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 3000);
+}
+
     </script>
 </body>
 </html>
