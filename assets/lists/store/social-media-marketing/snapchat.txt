@@ -1,5 +1,0 @@
-- Adds
-- Messages
-- SnapStreak increase
-- Story views
-- SpotLight views

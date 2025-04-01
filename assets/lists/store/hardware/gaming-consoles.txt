@@ -1,9 +1,0 @@
-- PS3
-- PS4
-- PS5
-- Xbox 360
-- Xbox One
-- Nintendo Wii
-- Nintendo Wii U
-- Nintendo Switch
-- SteamDeck

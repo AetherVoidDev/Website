@@ -1,2 +1,0 @@
-- Solid colours
-- Gradient colours

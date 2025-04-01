@@ -1,6 +1,0 @@
-- Cut
-- Overlay
-- Fade
-- SFX
-- Enhance quality
-- File size decreaser
