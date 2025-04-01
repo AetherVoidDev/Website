@@ -534,57 +534,104 @@ body {
             <img src="https://dev-fortitude.github.io/Website/assets/icons/theme.png" class="setting-icon">
             <span class="setting-title">Theming</span>
             <select class="custom-dropdown">
-                <option>System</option>
-                <option>Light</option>
-                <option>Dark</option>
-                <option>MidNight</option>
-                <option>Custom background (solid)</option>
-                <option>Custom background (gradient)</option>
-                <option>Custom accent (solid)</option>
-                <option>Custom accent (gradient)</option>
+                <option>Background colour</option>
+                <option>Accent colour</option>
                 <option>Icon style</option>
+                <option>Font</option>
+                <option>Text size</option>
+                <option>Text colour</option>
+                <option>Rainbow text</option>
+                <option>Animated text</option>
+                <option>Corner radius</option>
+                <option>Visibility</option>
             </select>
-            <p class="setting-description">Customise Your theme and icon style.</p>
-        </div>
-        
-        <div class="setting-bar">
-            <img src="https://dev-fortitude.github.io/Website/assets/icons/music-note.png" class="setting-icon">
-            <span class="setting-title">Background music</span>
-            <select class="custom-dropdown">
-                <option>Enabled</option>
-                <option>Disabled</option>
-            </select>
-            <p class="setting-description">Play music in the background (preset, via URL or from file).</p>
+            <p class="setting-description">Customise the way the website looks (visible to You only).</p>
         </div>
         
         <div class="setting-bar">
             <img src="https://dev-fortitude.github.io/Website/assets/icons/language.png" class="setting-icon">
             <span class="setting-title">Language</span>
             <select class="custom-dropdown">
+                <option>System</option>
+                <option>Browser</option>
                 <option>English</option>
                 <option>French</option>
                 <option>German</option>
                 <option>Spanish</option>
-                <option>Russian</option>
                 <option>Chinese</option>
                 <option>Japanese</option>
+                <option>Korean</option>
             </select>
             <p class="setting-description">Choose Your preffered language.</p>
+        </div>
+        
+        <div class="setting-bar">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/music-note.png" class="setting-icon">
+            <span class="setting-title">Background music</span>
+            <select class="custom-dropdown">
+                <option>Enable / disable</option>
+                <option>Preset music</option>
+                <option>Load via URL</option>
+                <option>Load from file</option>
+            </select>
+            <p class="setting-description">Configure Your preffered background music settings.</p>
         </div>
         
         <div class="setting-bar">
             <img src="https://dev-fortitude.github.io/Website/assets/icons/analytics.png" class="setting-icon">
             <span class="setting-title">Analytics</span>
             <select class="custom-dropdown">
-                <option>None</option>
+                <option>Enabled / disabled</option>
                 <option>IP address</option>
-                <option>General location</option>
-                <option>WebKit info</option>
-                <option>UserAgent info</option>
-                <option>Device info</option>
                 <option>Browser info</option>
+                <option>Device specifications</option>
+                <option>General location</option>
+                <option>UserAgent info</option>
+                <option>WebKit info</option>
+                <option>Local cookies</option>
+                <option>Fortitude account info</option>
             </select>
-            <p class="setting-description">Choose what data You're alright with Us collecting.</p>
+            <p class="setting-description">Choose which data You consent to Us collecting. Please read more about this setting in the privacy policy.</p>
+        </div>
+            
+        <div class="setting-bar">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/account.png" class="setting-icon">
+            <span class="setting-title">Accounts</span>
+            <select class="custom-dropdown">
+                <option>Cloud backup</option>
+                <option>2FA</option>
+            </select>
+            <p class="setting-description">Configure settings for Fortitude and other accounts You use to sign in.</p>
+        </div>
+            
+        <div class="setting-bar">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/assistant.png" class="setting-icon">
+            <span class="setting-title">Assistant</span>
+            <select class="custom-dropdown">
+                <option>Enabled / disabled</option>
+                <option>AI model (Fortitude, gpt4, gpt3)</option>
+            </select>
+            <p class="setting-description">Configure settings for the Assistant integration.</p>
+        </div>
+            
+        <div class="setting-bar">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/experimental.png" class="setting-icon">
+            <span class="setting-title">Experimental features</span>
+            <select class="custom-dropdown">
+                <option>Custom login portal</option>
+                <option>Enable experiments page</option>
+            </select>
+            <p class="setting-description">Please note that these features won't fully work just yet, be careful!</p>
+        </div>
+            
+        <div class="setting-bar">
+            <img src="https://dev-fortitude.github.io/Website/assets/icons/developers.png" class="setting-icon">
+            <span class="setting-title">Developers only</span>
+            <select class="custom-dropdown">
+                <option>Advanced debugging</option>
+                <option>Local analytics</option>
+            </select>
+            <p class="setting-description">Make sure You know what You're doing before You use any of these settings!</p>
         </div>
         
         <button class="save-button" onclick="showPopup()">Save Changes</button>
