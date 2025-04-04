@@ -33,96 +33,22 @@ Feel free to read through Our documentation. You can do this via the website or 
 You can use the links below to stay up to date with our latest news and updates or get in contact with us.  
 Please note that all team members have access to these accounts. We may add our personal accounts to the list in the future:
 
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png" alt="Facebook" align="center" /> Facebook
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" align="center" /> Instagram
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/threads-app.png" alt="Threads" align="center" /> Threads
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp--v1.png" alt="WhatsApp" align="center" /> WhatsApp
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram" align="center" /> Telegram
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx.png" alt="X" align="center" /> X
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/snapchat.png" alt="SnapChat" align="center" /> SnapChat
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/tiktok--v1.png" alt="TikTok" align="center" /> TikTok
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/tumblr.png" alt="Tumblr" align="center" /> Tumblr
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/reddit.png" alt="Reddit" align="center" /> Reddit
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/pinterest--v1.png" alt="Pinterest" align="center" /> Pinterest
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/twitch.png" alt="Twitch" align="center" /> Twitch
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/kick.png" alt="Kick" align="center" /> Kick
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/discord-logo.png" alt="Discord" align="center" /> Discord
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube" align="center" /> YouTube
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud" align="center" /> SoundCloud
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/spotify.png" alt="Spotify" align="center" /> Spotify
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/play-station.png" alt="PlayStation" align="center" /> PlayStation
-</a>
-<br/>
-
-<a href="https://google.com/404">
-  <img src="https://img.icons8.com/ios-filled/24/ffffff/xbox.png" alt="Xbox" align="center" /> Xbox
-</a>
+[![Facebook](https://img.shields.io/badge/Facebook-000?logo=facebook&logoColor=white)](https://google.com/404)  
+[![Instagram](https://img.shields.io/badge/Instagram-000?logo=instagram&logoColor=white)](https://google.com/404)  
+[![Threads](https://img.shields.io/badge/Threads-000?logo=threads&logoColor=white)](https://google.com/404)  
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-000?logo=whatsapp&logoColor=white)](https://google.com/404)  
+[![Telegram](https://img.shields.io/badge/Telegram-000?logo=telegram&logoColor=white)](https://google.com/404)  
+[![X](https://img.shields.io/badge/X-000?logo=x&logoColor=white)](https://google.com/404)  
+[![Snapchat](https://img.shields.io/badge/Snapchat-000?logo=snapchat&logoColor=white)](https://google.com/404)  
+[![TikTok](https://img.shields.io/badge/TikTok-000?logo=tiktok&logoColor=white)](https://google.com/404)  
+[![Tumblr](https://img.shields.io/badge/Tumblr-000?logo=tumblr&logoColor=white)](https://google.com/404)  
+[![Reddit](https://img.shields.io/badge/Reddit-000?logo=reddit&logoColor=white)](https://google.com/404)  
+[![Pinterest](https://img.shields.io/badge/Pinterest-000?logo=pinterest&logoColor=white)](https://google.com/404)  
+[![Twitch](https://img.shields.io/badge/Twitch-000?logo=twitch&logoColor=white)](https://google.com/404)  
+[![Kick](https://img.shields.io/badge/Kick-000?logo=kick&logoColor=white)](https://google.com/404)  
+[![Discord](https://img.shields.io/badge/Discord-000?logo=discord&logoColor=white)](https://google.com/404)  
+[![YouTube](https://img.shields.io/badge/YouTube-000?logo=youtube&logoColor=white)](https://google.com/404)  
+[![SoundCloud](https://img.shields.io/badge/SoundCloud-000?logo=soundcloud&logoColor=white)](https://google.com/404)  
+[![Spotify](https://img.shields.io/badge/Spotify-000?logo=spotify&logoColor=white)](https://google.com/404)  
+[![PlayStation](https://img.shields.io/badge/PlayStation-000?logo=playstation&logoColor=white)](https://google.com/404)  
+[![Xbox](https://img.shields.io/badge/Xbox-000?logo=xbox&logoColor=white)](https://google.com/404)  
