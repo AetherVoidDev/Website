@@ -1,0 +1,34 @@
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus {
+  outline: none;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -webkit-transition: image-rendering 0.3s ease;
+}
+
+.icon {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -webkit-transition: image-rendering 0.3s ease;
+}
+
+* {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-resolution: 192dpi) {
+  img, .icon {
+    image-rendering: optimizeQuality;
+  }
+}
