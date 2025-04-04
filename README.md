@@ -50,5 +50,3 @@ Please note that all team members have access to these accounts. We may add our 
 [![YouTube](https://img.shields.io/badge/YouTube-000?logo=youtube&logoColor=white)](https://google.com/404)  
 [![SoundCloud](https://img.shields.io/badge/SoundCloud-000?logo=soundcloud&logoColor=white)](https://google.com/404)  
 [![Spotify](https://img.shields.io/badge/Spotify-000?logo=spotify&logoColor=white)](https://google.com/404)  
-[![PlayStation](https://img.shields.io/badge/PlayStation-000?logo=playstation&logoColor=white)](https://google.com/404)  
-[![Xbox](https://img.icons8.com/ios-filled/24/ffffff/xbox.png)](https://google.com/404)  
