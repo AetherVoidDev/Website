@@ -30,24 +30,99 @@ Feel free to read through Our documentation. You can do this via the website or 
 ---
 
 ### Socials & Contact
-You can use the links below to stay up to date with Our latest news and updates or get in contact with Us. Please note that all Team Members have access to these accounts. We may add Our personal accounts to the list in the future:  
+You can use the links below to stay up to date with our latest news and updates or get in contact with us.  
+Please note that all team members have access to these accounts. We may add our personal accounts to the list in the future:
 
-[Facebook](https://google.com/404)  
-[Instagram](https://google.com/404)  
-[Threads](https://google.com/404)  
-[WhatsApp](https://google.com/404)  
-[Telegram](https://google.com/404)  
-[X](https://google.com/404)  
-[SnapChat](https://google.com/404)  
-[TikTok](https://google.com/404)  
-[Tumblr](https://google.com/404)  
-[Reddit](https://google.com/404)  
-[Pinterest](https://google.com/404)  
-[Twitch](https://google.com/404)  
-[Kick](https://google.com/404)  
-[Discord](https://google.com/404)  
-[YouTube](https://google.com/404)  
-[SoundCloud](https://google.com/404)  
-[Spotify](https://google.com/404)  
-[PlayStation](https://google.com/404)  
-[Xbox](https://google.com/404)  
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/facebook/ffffff" width="20" align="center" /> Facebook
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/instagram/ffffff" width="20" align="center" /> Instagram
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/threads/ffffff" width="20" align="center" /> Threads
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/whatsapp/ffffff" width="20" align="center" /> WhatsApp
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/telegram/ffffff" width="20" align="center" /> Telegram
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/x/ffffff" width="20" align="center" /> X
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/snapchat/ffffff" width="20" align="center" /> SnapChat
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/tiktok/ffffff" width="20" align="center" /> TikTok
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/tumblr/ffffff" width="20" align="center" /> Tumblr
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/reddit/ffffff" width="20" align="center" /> Reddit
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/pinterest/ffffff" width="20" align="center" /> Pinterest
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/twitch/ffffff" width="20" align="center" /> Twitch
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/kick/ffffff" width="20" align="center" /> Kick
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/discord/ffffff" width="20" align="center" /> Discord
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/youtube/ffffff" width="20" align="center" /> YouTube
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/soundcloud/ffffff" width="20" align="center" /> SoundCloud
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/spotify/ffffff" width="20" align="center" /> Spotify
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/playstation/ffffff" width="20" align="center" /> PlayStation
+</a>  
+<br/>
+
+<a href="https://google.com/404">
+  <img src="https://cdn.simpleicons.org/xbox/ffffff" width="20" align="center" /> Xbox
+</a>  
