@@ -34,95 +34,95 @@ You can use the links below to stay up to date with our latest news and updates 
 Please note that all team members have access to these accounts. We may add our personal accounts to the list in the future:
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/facebook/ffffff" width="20" align="center" /> Facebook
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png" alt="Facebook" align="center" /> Facebook
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/instagram/ffffff" width="20" align="center" /> Instagram
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" align="center" /> Instagram
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/threads/ffffff" width="20" align="center" /> Threads
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/threads-app.png" alt="Threads" align="center" /> Threads
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/whatsapp/ffffff" width="20" align="center" /> WhatsApp
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp--v1.png" alt="WhatsApp" align="center" /> WhatsApp
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/telegram/ffffff" width="20" align="center" /> Telegram
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram" align="center" /> Telegram
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/x/ffffff" width="20" align="center" /> X
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx.png" alt="X" align="center" /> X
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/snapchat/ffffff" width="20" align="center" /> SnapChat
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/snapchat.png" alt="SnapChat" align="center" /> SnapChat
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/tiktok/ffffff" width="20" align="center" /> TikTok
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/tiktok--v1.png" alt="TikTok" align="center" /> TikTok
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/tumblr/ffffff" width="20" align="center" /> Tumblr
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/tumblr.png" alt="Tumblr" align="center" /> Tumblr
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/reddit/ffffff" width="20" align="center" /> Reddit
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/reddit.png" alt="Reddit" align="center" /> Reddit
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/pinterest/ffffff" width="20" align="center" /> Pinterest
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/pinterest--v1.png" alt="Pinterest" align="center" /> Pinterest
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/twitch/ffffff" width="20" align="center" /> Twitch
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/twitch.png" alt="Twitch" align="center" /> Twitch
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/kick/ffffff" width="20" align="center" /> Kick
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/kick.png" alt="Kick" align="center" /> Kick
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/discord/ffffff" width="20" align="center" /> Discord
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/discord-logo.png" alt="Discord" align="center" /> Discord
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/youtube/ffffff" width="20" align="center" /> YouTube
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube" align="center" /> YouTube
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/soundcloud/ffffff" width="20" align="center" /> SoundCloud
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/soundcloud.png" alt="SoundCloud" align="center" /> SoundCloud
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/spotify/ffffff" width="20" align="center" /> Spotify
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/spotify.png" alt="Spotify" align="center" /> Spotify
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/playstation/ffffff" width="20" align="center" /> PlayStation
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/play-station.png" alt="PlayStation" align="center" /> PlayStation
+</a>
 <br/>
 
 <a href="https://google.com/404">
-  <img src="https://cdn.simpleicons.org/xbox/ffffff" width="20" align="center" /> Xbox
-</a>  
+  <img src="https://img.icons8.com/ios-filled/24/ffffff/xbox.png" alt="Xbox" align="center" /> Xbox
+</a>
