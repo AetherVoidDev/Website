@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .login-container {
+      background-color: #1e1e1e;
+      padding: 40px 30px;
+      border-radius: 16px;
+      width: 350px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .input-group img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .input-group input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      flex: 1;
+      font-size: 14px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn-filled,
+    .btn-outline {
+      padding: 10px;
+      border-radius: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn-filled {
+      background-color: mediumpurple;
+      border: none;
+      color: white;
+    }
+
+    .btn-filled:hover {
+      background-color: mediumpurple;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid mediumpurple;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background-color: mediumpurple;
+      color: white;
+    }
+
+    .link-text {
+      color: mediumpurple;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .link-text:hover {
+      color: mediumpurple;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <div class="input-group">
+      <img src="#" alt="User Icon">
+      <input type="text" placeholder="Username, Email or phone number">
+    </div>
+
+    <div class="input-group">
+      <img src="#" alt="Password Icon">
+      <input type="password" placeholder="Password">
+    </div>
+
+    <div class="button-group">
+      <button class="btn-filled" onclick="window.location.href='#'">Login</button>
+      <button class="btn-outline" onclick="window.location.href='#'">Sign Up</button>
+    </div>
+
+    <div class="link-text" onclick="window.location.href='#'">
+      Forgot Your password?
+    </div>
+  </div>
+
+</body>
+</html>

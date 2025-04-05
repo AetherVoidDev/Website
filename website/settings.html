@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .settings-section {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 0 auto 40px;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .section-header {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .setting-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      padding: 12px 16px;
+      margin-bottom: 15px;
+    }
+
+    .setting-label {
+      font-size: 16px;
+    }
+
+    select {
+      background-color: #1e1e1e;
+      color: white;
+      border: 1px solid #555;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 14px;
+      outline: none;
+      appearance: none;
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="white" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 14px;
+      padding-right: 30px;
+      cursor: pointer;
+    }
+
+    select:hover {
+      border-color: mediumpurple;
+    }
+
+    .save-btn {
+      background-color: mediumpurple;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      transition: background 0.3s;
+    }
+
+    .save-btn:hover {
+      background-color: rebeccapurple;
+    }
+
+    .popup {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #1e1e1e;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    .popup.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Settings</h1>
+
+  <div class="settings-section">
+    <div class="section-header">Appearance</div>
+    
+    <div class="setting-bar">
+      <div class="setting-label">Background colour</div>
+      <select>
+        <option>System</option>
+        <option>Light</option>
+        <option>Dark</option>
+        <option>Custom</option>
+      </select>
+    </div>
+
+    <div class="setting-bar">
+      <div class="setting-label">Accent & icon colour</div>
+      <select>
+        <option>White</option>
+        <option>Grey</option>
+        <option>Purple</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Red</option>
+        <option>Yellow</option>
+      </select>
+    </div>
+    
+        <div class="setting-bar">
+      <div class="setting-label">Icon style</div>
+      <select>
+        <option>Default</option>
+        <option>Outlined (sharp)</option>
+        <option>Filled (sharp)</option>
+        <option>Outlined (rounded)</option>
+        <option>Filled (rounded)</option>
+      </select>
+    </div>
+   </div>
+
+  <button class="save-btn" onclick="showPopup()">Save Settings</button>
+
+  <div class="popup" id="popup">Settings saved successfully!</div>
+
+  <script>
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.add('show');
+
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checking Browser...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #141414;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .pre-loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pre-loader h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .pre-loader p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      font-size: 30px;
+    }
+
+    .dots span {
+      animation: blink 1.5s infinite;
+    }
+
+    .dots span:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .dots span:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .dots span:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="pre-loader">
+    <h2>Checking browser</h2>
+    <p>Verifying You're Human, please wait...</p>
+    <div class="dots">
+      <span>.</span>
+      <span>.</span>
+      <span>.</span>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'https://forti-dev.github.io/Website/website/home.html';
+    }, 3000);
+  </script>
+
+</body>
+</html>

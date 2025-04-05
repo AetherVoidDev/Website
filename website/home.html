@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: white;
+      padding: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .hero {
+      height: 300px;
+      border-radius: 20px;
+      background-image: url('#');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: 30px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin: 10px 0 20px;
+    }
+
+    .hero button {
+      background-color: mediumpurple;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: rebeccapurple;
+    }
+
+    .cards-section, .links-section, .downloads-section {
+      margin-top: 60px;
+    }
+
+    .card-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      padding: 20px;
+      width: 100%;
+      max-width: calc(33.33% - 13.33px);
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .link-bar {
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin: 10px auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .link-bar:hover {
+      background-color: #3a3a3a;
+    }
+
+    .link-bar img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .downloads-section {
+      text-align: center;
+    }
+
+    .downloads-section p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .download-btn {
+      background-color: mediumpurple;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .download-btn:hover {
+      background-color: rebeccapurple;
+    }
+
+    @media (max-width: 900px) {
+      .card {
+        max-width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Fortitude Developments</h1>
+        <p>Explore the "bit of everything" We have to offer!</p>
+        <button onclick="window.location.href='#'">Learn more</button>
+      </div>
+    </div>
+
+    <div class="cards-section">
+      <h2>What makes Us unique</h2>
+      <div class="card-row">
+        <div class="card">
+          <img src="#" alt="#">
+          <h3>Card.Header</h3>
+          <p>Card.Text</p>
+        </div>
+        <div class="card">
+          <img src="#" alt="#">
+          <h3>Card.Header</h3>
+          <p>Card.Text</p>
+        </div>
+        <div class="card">
+          <img src="#" alt="#">
+          <h3>Card.Header</h3>
+          <p>Card.Text</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="links-section">
+      <h2>Explore</h2>
+      <div class="link-bar" onclick="window.open('#', '_blank')">
+        <span>Bar.Text</span>
+        <img src="#" alt="Arrow">
+      </div>
+      <div class="link-bar" onclick="window.open('#', '_blank')">
+        <span>Bar.Text</span>
+        <img src="#" alt="Arrow">
+      </div>
+      <div class="link-bar" onclick="window.open('#', '_blank')">
+        <span>Bar.Text</span>
+        <img src="#" alt="Arrow">
+      </div>
+    </div>
+
+    <div class="downloads-section">
+      <h2>Download Our app</h2>
+      <p>Visit Us from the comfort of Your own home or on the go!</p>
+      <button class="download-btn" onclick="window.location.href='#'">Windows</button>
+      <button class="download-btn" onclick="window.location.href='#'">Android</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
