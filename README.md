@@ -15,7 +15,9 @@ Shortened URL: https://bit.ly/AetherVoid
 ---
 
 ### AetherVoid App
-This section will be updated soon, please be patient.
+Visit Us from the comfor of Your own home or on the go with Our lightweight app for Windows and Android:  
+[Windows](https://google.com/404)  
+[Android](https://google.com/404)  
 
 ---
 
@@ -30,7 +32,7 @@ This section will be updated soon, please be patient.
 ---
 
 ### Found A Bug?
-This section will be updated soon, please be patient.
+If You've found an issue or a bug, please report it via issues or using the contact information below.
 
 ---
 
