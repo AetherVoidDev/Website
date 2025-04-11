@@ -15,7 +15,7 @@ Shortened URL: https://bit.ly/AetherVoid
 ---
 
 ### AetherVoid App
-Visit Us from the comfor of Your own home or on the go with Our lightweight app for Windows and Android:  
+Visit Us from the comfort of Your own home or on the go with Our lightweight app for Windows and Android:  
 [Windows](https://google.com/404)  
 [Android](https://google.com/404)  
 
