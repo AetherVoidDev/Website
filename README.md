@@ -1,10 +1,17 @@
 ### Statistics
-This section will be updated soon, please be patient.
-
+| Statistic                   | Value                             |
+|---------------------------|------------------------------------|
+| Repository size     | `Unknown`                               |
+| Forks         | `0`                              |
+| Stars                 | `0`                               |
+| Last commit    | `15/04/2025`                             |
+| App status         | `Unavailable`                         |
+| Team contributors         | `3`                          |
+| Repository visits         | `16`                       |
 ---
 
 ### Introduction
-This section will be updated soon, please be patient.
+Hey and welcome to the **AetherVoid Developments** website! Here, You can find all of Our projects, tools, content and more. From free Anime and movies, image and audio tools, to PlayStation exploits and homebrew, We have it all!
 
 ---
 
@@ -22,7 +29,17 @@ Visit Us from the comfort of Your own home or on the go with Our lightweight app
 ---
 
 ### Official Documentation
-This section will be updated soon, please be patient.
+Feel free to read through Our official documentation. You can view all files separately or download all of them as an archive:  
+- [Terms Of Service](https://google.com/404)  
+- [Code Of Conduct](https://google.com/404)  
+- [Privacy Policy](https://google.com/404)  
+- [Legality](https://google.com/404)  
+- [Licenses](https://google.com/404)  
+- [Credits](https://google.com/404)  
+- [About Us](https://google.com/404)  
+- [Contact & Socials](https://google.com/404)  
+
+[Documentation archive](https://google.com/404)  
 
 ---
 
@@ -37,4 +54,13 @@ If You've found an issue or a bug, please report it via issues or using the cont
 ---
 
 ### Socials & Contact
-This section will be updated soon, please be patient.
+[Facebook](https://google.com/404)  
+[Instagram](https://google.com/404)  
+[Threads](https://google.com/404)  
+[X](https://google.com/404)  
+[SnapChat](https://google.com/404)  
+[TikTok](https://google.com/404)  
+[Discord](https://google.com/404)  
+[YouTube](https://google.com/404)  
+
+[Email](https://google.com/404)  
