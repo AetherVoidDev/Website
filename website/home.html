@@ -102,7 +102,7 @@
     margin-top: 12px;
     background: #2a2f3f;
     border-radius: 12px;
-    padding: 6px 10px;
+    padding: 2px 10px;
     display: flex;
     align-items: center;
   }
@@ -110,7 +110,7 @@
   .popup-input img {
     width: 14px;
     height: 14px;
-    margin-right: 8px;
+    margin-right: 10px;
   }
 
   .popup-input input {
@@ -120,6 +120,44 @@
     color: white;
     width: 100%;
     font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #1a1f2f;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  z-index: 2;
+  font-size: 0.9rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-dropdown .dropdown-option {
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+  width: 100%;
+  display: block;
+  text-align: left;
+  }
+
+  .search-dropdown .dropdown-option:hover {
+    background-color: #2a2f3f;
+    padding-left: 16px;
+  }
+
+  .search-dropdown .dropdown-option img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
   }
 
   .dropdown {
@@ -144,7 +182,7 @@
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
   }
 
   .dropdown-option img {
@@ -177,7 +215,7 @@
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
   }
 
   .submenu-option img {
@@ -206,6 +244,7 @@
     }
   }
 </style>
+
 
 </head>
 <body>
@@ -283,18 +322,19 @@
     <p>Please come back soon.</p>
   </div>
 
-  <div class="overlay" id="popup-overlay">
-    <div class="popup">
-      <div class="popup-header">
-        <div class="title">Search</div>
-        <img src="https://aethervoiddev.github.io/Website/assets/media/icons/close.png" alt="Close" id="popup-close" />
-      </div>
-      <div class="popup-input">
-        <img src="https://aethervoiddev.github.io/Website/assets/media/icons/search.png" alt="Search Icon">
-        <input type="text" placeholder="Type to search...">
-      </div>
+<div class="overlay" id="popup-overlay">
+  <div class="popup">
+    <div class="popup-header">
+      <div class="title">Search</div>
+      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/close.png" alt="Close" id="popup-close" />
     </div>
+    <div class="popup-input">
+      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/search.png" alt="Search Icon">
+      <input type="text" placeholder="Type to search..." id="search-input">
+    </div>
+    <div class="search-dropdown" id="search-dropdown"></div>
   </div>
+</div>
 
   <footer>
     &copy; AetherVoid Developments 2025. All Rights Reserved.
@@ -309,6 +349,8 @@
   const searchIcon = document.getElementById('search-icon');
   const popupOverlay = document.getElementById('popup-overlay');
   const popupClose = document.getElementById('popup-close');
+  const searchInput = document.getElementById('search-input');
+  const searchDropdown = document.getElementById('search-dropdown');
 
   searchIcon.addEventListener('click', () => {
     popupOverlay.style.display = 'flex';
@@ -316,6 +358,49 @@
 
   popupClose.addEventListener('click', () => {
     popupOverlay.style.display = 'none';
+  });
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    if (query === "") {
+      searchDropdown.style.display = 'none';
+      return;
+    }
+
+    const results = [
+      { name: "Explore", link: "#" },
+      { name: "Projects", link: "#" },
+      { name: "Content", link: "#" },
+      { name: "Tools", link: "#" },
+      { name: "Store", link: "#" },
+      { name: "Our App", link: "#" }
+    ];
+
+    const filteredResults = results.filter(result => result.name.toLowerCase().includes(query));
+    
+    if (filteredResults.length > 0) {
+      searchDropdown.style.display = 'flex';
+      searchDropdown.innerHTML = filteredResults.map(result => `
+        <div class="dropdown-option" onclick="window.location.href='${result.link}'">
+          <img src="https://aethervoiddev.github.io/Website/assets/media/icons/explore.png" alt="${result.name}"> ${result.name}
+        </div>
+      `).join('');
+    } else {
+      searchDropdown.style.display = 'none';
+    }
+  });
+
+  searchDropdown.addEventListener('mouseover', (e) => {
+    if (e.target.classList.contains('dropdown-option')) {
+      e.target.style.backgroundColor = '#2a2f3f';
+    }
+  });
+
+  searchDropdown.addEventListener('mouseout', (e) => {
+    if (e.target.classList.contains('dropdown-option')) {
+      e.target.style.backgroundColor = '';
+    }
   });
 
   const menuIcon = document.getElementById('menu-icon');
@@ -349,6 +434,7 @@
       });
     }
   });
+
 </script>
 
 </body>
