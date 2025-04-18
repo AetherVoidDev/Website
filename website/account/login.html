@@ -42,10 +42,139 @@ nav img:hover {
   transform: scale(1.1);
 }
 
-.main-content {
-  flex: 1;
-  padding: 40px 20px;
-  text-align: center;
+.login-container {
+background-color: #111624;
+border-radius: 16px;
+width: 90%;
+max-width: 440px;
+margin: 40px auto;
+padding: 30px 20px;
+text-align: center;
+}
+
+.login-title {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.login-input {
+  background-color: #1a1f2f;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+}
+
+.login-input img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.login-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 0.85rem;
+}
+
+.remember-me input {
+  margin-right: 6px;
+  accent-color: #3a8dff;
+}
+
+.forgot-link {
+  color: #3a8dff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: #66aaff;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: #3a8dff;
+  border: none;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #66aaff;
+}
+
+.alt-btn {
+  border: 2px solid #3a8dff;
+  background: transparent;
+  color: #3a8dff;
+}
+
+.alt-btn:hover {
+  border-color: #66aaff;
+  color: #66aaff;
+}
+
+.login-footer-text {
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.login-popup {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  z-index: 999;
 }
 
 footer {
@@ -55,6 +184,7 @@ footer {
   padding: 6px 10px;
   font-size: 0.85rem;
   line-height: 1.4;
+  margin-top: auto;
 }
 
 .overlay {
@@ -336,10 +466,44 @@ footer {
     </div>
   </nav>
 
-  <div class="main-content">
-    <h1>Page incomplete</h1>
-    <p>Please come back soon.</p>
+<div class="login-container">
+  <h4 class="login-title">Login</h4>
+
+  <div class="login-input">
+    <img src="https://aethervoiddev.github.io/Website/assets/media/icons/account.png" alt="User">
+    <input type="text" placeholder="Username, email address or phone number" id="username">
   </div>
+
+  <div class="login-input">
+    <img src="https://aethervoiddev.github.io/Website/assets/media/icons/pre-loader.png" alt="Password">
+    <input type="password" placeholder="Password" id="password">
+  </div>
+
+  <div class="login-options">
+    <label class="remember-me">
+      <input type="checkbox">
+      Remember Me
+    </label>
+    <a href="#" class="forgot-link">Forgot Password?</a>
+  </div>
+
+  <div class="login-buttons">
+    <button class="btn login-btn" onclick="validateLogin()">Login</button>
+    <button class="btn alt-btn" onclick="window.location.href='#'">Guest</button>
+  </div>
+
+  <p class="login-footer-text">Or continue with</p>
+
+  <div class="social-icons">
+    <a href="#"><img src="https://aethervoiddev.github.io/Website/assets/media/icons/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="https://aethervoiddev.github.io/Website/assets/media/icons/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="https://aethervoiddev.github.io/Website/assets/media/icons/x.png" alt="X"></a>
+    <a href="#"><img src="https://aethervoiddev.github.io/Website/assets/media/icons/discord.png" alt="Discord"></a>
+    <a href="#"><img src="https://aethervoiddev.github.io/Website/assets/media/icons/google.png" alt="Google"></a>
+  </div>
+
+  <div class="login-popup" id="error-popup">Incorrect credentials, please try again. Default login credentials: AetherVoid / Default</div>
+</div>
 
 <div class="overlay" id="popup-overlay">
   <div class="popup">
@@ -458,6 +622,21 @@ footer {
       });
     }
   });
+
+  function validateLogin() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const popup = document.getElementById("error-popup");
+
+    if (username === "AetherVoid" && password === "Default") {
+      window.location.href = "#";
+    } else {
+      popup.style.display = "block";
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 3000);
+    }
+  }
 
 </script>
 
