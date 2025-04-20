@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiments</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #0a0f1a;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 1%;
+    }
+
+    .container {
+      width: 98%;
+      height: 45%;
+      background-color: #1a1f2e;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .btn {
+      background-color: #3c4c6e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5a6d94;
+    }
+
+    .notification, .wide-notification {
+      position: absolute;
+      top: 10px;
+      background-color: #3c4c6e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .wide-notification {
+      width: 98%;
+      left: 1%;
+      padding: 12px 0;
+    }
+
+    .bottom-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .chat-icon-wrapper {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 48px;
+      height: 48px;
+      background-color: #3c4c6e;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 20;
+    }
+
+    .chat-icon-wrapper img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .chat-popup {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      max-height: 400px;
+      background-color: #1a1f2e;
+      border-radius: 12px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      overflow: hidden;
+      z-index: 30;
+    }
+
+    .chat-header, .chat-footer {
+      background-color: #2a3246;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .chat-header {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .chat-footer {
+      border-radius: 0 0 12px 12px;
+    }
+
+    .chat-body {
+      padding: 10px;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: white;
+    }
+
+    .chat-body::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .chat-body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .chat-body::-webkit-scrollbar-thumb {
+      background-color: #5a6d94;
+      border-radius: 10px;
+    }
+
+    .chat-body {
+      scrollbar-width: thin;
+      scrollbar-color: #5a6d94 transparent;
+    }
+
+    .chat-input {
+      background-color: #1a1f2e;
+      border: none;
+      color: white;
+      outline: none;
+      flex: 1;
+      margin-left: 10px;
+    }
+
+    .chat-footer-bar {
+      background-color: #3c4c6e;
+      display: flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .chat-footer-bar img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .chat-header img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .message-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .profile-pic {
+      width: 30px;
+      height: 30px;
+      background-color: #5a6d94;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .message {
+      background-color: #3c4c6e;
+      padding: 6px 10px;
+      border-radius: 8px;
+      max-width: 200px;
+      word-wrap: break-word;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message img {
+      margin-top: 8px;
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-focus-ring-color: transparent;
+      outline: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container" id="top-container">
+      <button class="btn" onclick="showNotification()">Show short notification</button>
+      <button class="btn" onclick="showWideNotification()">Show wide Notification</button>
+    </div>
+
+    <div class="container" id="bottom-container">
+      <button class="btn bottom-button" onclick="window.location.href='https://aethervoiddev.github.io/Website/website/experiments/creation-studio/home.html'">Go to Creation Studio (experiment)</button>
+    </div>
+  </div>
+
+  <div class="chat-icon-wrapper" onclick="toggleChatPopup()">
+    <img src="https://aethervoiddev.github.io/Website/assets/media/icons/chat.png" alt="Chat">
+  </div>
+
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+      <span>Chat</span>
+      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/close.png" alt="Close" onclick="toggleChatPopup()">
+    </div>
+    <div class="chat-body" id="chatMessages">
+    </div>
+    <div class="chat-footer">
+      <div class="chat-footer-bar">
+        <img src="https://aethervoiddev.github.io/Website/assets/media/icons/upload.png" alt="Upload" onclick="document.getElementById('fileInput').click()">
+        <input type="file" id="fileInput" style="display:none;" accept="image/*">
+        <input type="text" class="chat-input" id="chatInput" placeholder="Type a message...">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showNotification() {
+      removeNotifications();
+      const note = document.createElement('div');
+      note.className = 'notification';
+      note.innerText = 'This is a notification';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 3000);
+    }
+
+    function showWideNotification() {
+      removeNotifications();
+      const wideNote = document.createElement('div');
+      wideNote.className = 'wide-notification';
+      wideNote.innerText = 'This is a notification';
+      document.body.appendChild(wideNote);
+      setTimeout(() => wideNote.remove(), 3000);
+    }
+
+    function removeNotifications() {
+      document.querySelectorAll('.notification, .wide-notification').forEach(el => el.remove());
+    }
+
+    function toggleChatPopup() {
+      const popup = document.getElementById('chatPopup');
+      popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function getRandomLetter() {
+      const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      return alphabet[Math.floor(Math.random() * alphabet.length)];
+    }
+
+    function createMessageElement(content, isImage = false) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'message-wrapper';
+
+      const avatar = document.createElement('div');
+      avatar.className = 'profile-pic';
+      avatar.textContent = getRandomLetter();
+
+      const message = document.createElement('div');
+      message.className = 'message';
+
+      if (isImage) {
+        const img = document.createElement('img');
+        img.src = content;
+        message.appendChild(img);
+      } else {
+        message.textContent = content;
+      }
+
+      wrapper.appendChild(avatar);
+      wrapper.appendChild(message);
+      return wrapper;
+    }
+
+    document.getElementById('chatInput').addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' && this.value.trim() !== '') {
+        const messageElement = createMessageElement(this.value);
+        document.getElementById('chatMessages').appendChild(messageElement);
+        this.value = '';
+        document.getElementById('chatMessages').scrollTop = document.getElementById('chatMessages').scrollHeight;
+      }
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const imageElement = createMessageElement(e.target.result, true);
+          document.getElementById('chatMessages').appendChild(imageElement);
+          document.getElementById('chatMessages').scrollTop = document.getElementById('chatMessages').scrollHeight;
+        };
+        reader.readAsDataURL(file);
+        this.value = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
