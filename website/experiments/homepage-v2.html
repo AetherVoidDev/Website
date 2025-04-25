@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page.Test</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #0a0f1a;
+      --accent: #00ffff;
+      --text: #f0f0f0;
+      --card-bg: rgba(20, 25, 35, 0.7);
+      --glass: rgba(255, 255, 255, 0.05);
+      --radius: 1rem;
+      --hover-glow: 0 0 10px var(--accent);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #1f2a40;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      position: relative;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+      color: #000;
+      box-shadow: var(--hover-glow);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 170%;
+      left: 0;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius);
+      padding: 0.5rem;
+      display: none;
+      flex-direction: column;
+      box-shadow: var(--hover-glow);
+      z-index: 999;
+    }
+
+    .dropdown a {
+      white-space: nowrap;
+      margin: 0.2rem 0;
+    }
+
+    nav li:hover .dropdown {
+      display: flex;
+      animation: dropFade 0.3s ease forwards;
+    }
+
+    @keyframes dropFade {
+      from { transform: translateY(-10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to bottom right, rgba(0,255,255,0.1), rgba(0,0,50,0.3));
+      border-radius: var(--radius);
+      margin: 2rem;
+      animation: fadeIn 1s ease;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 0 10px rgba(0,255,255,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--hover-glow);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .card i {
+      font-size: 2rem;
+      background: rgba(255,255,255,0.1);
+      padding: 0.6rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .contact {
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      padding: 3rem 2rem;
+      margin: 2rem;
+      border-radius: var(--radius);
+    }
+
+    .contact h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text);
+      padding: 0.75rem;
+      border-radius: calc(var(--radius) * 0.8);
+      resize: none;
+      transition: border 0.3s;
+    }
+
+    .contact input:focus, .contact textarea:focus {
+      border: 1px solid var(--accent);
+      outline: none;
+    }
+
+    button {
+      background-color: var(--accent);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: calc(var(--radius) * 0.8);
+      cursor: pointer;
+      font-weight: bold;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      box-shadow: var(--hover-glow);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      margin-top: 3rem;
+    }
+
+    .cookie-popup {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1rem 1.5rem;
+      max-width: 350px;
+      box-shadow: var(--hover-glow);
+      z-index: 10000;
+      display: none;
+      animation: fadeInUp 0.5s ease;
+    }
+
+    .cookie-popup.show {
+      display: block;
+    }
+
+    .cookie-popup p {
+      margin-bottom: 1rem;
+    }
+
+    .cookie-popup button {
+      margin-right: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2 style="color: var(--accent);"><i class="fas fa-bolt"></i> Nav.Title</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Nav.Option</a></li>
+        <li>
+          <a href="#">Nav.Menu</a>
+          <div class="dropdown">
+            <a href="#"><i class="fas fa-code"></i> Nav.Menu.Option</a>
+            <a href="#"><i class="fas fa-paint-brush"></i> Nav.Menu.Option</a>
+            <a href="#"><i class="fas fa-plug"></i> Nav.Menu.Option</a>
+          </div>
+        </li>
+        <li><a href="#">Nav.Option</a></li>
+        <li><a href="#">Nav.Option</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hero.Header</h1>
+    <p>Hero.SubHeader</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <i class="fas fa-tools"></i>
+      <h3>Card.Header</h3>
+      <p>Card.Text</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-layer-group"></i>
+      <h3>Card.Header</h3>
+      <p>Card.Text</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-plug-circle-check"></i>
+      <h3>Card.Header</h3>
+      <p>Card.Text</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact.Header</h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Placeholder" required>
+      <input type="email" placeholder="Placeholder" required>
+      <textarea rows="5" placeholder="Placeholder" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Message.Button</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; Footer.Text
+  </footer>
+
+  <div class="cookie-popup" id="cookiePopup">
+    <p><strong>Cookie.Bold</strong> Cookie.Text</p>
+    <button onclick="acceptCookies()">Button</button>
+    <button onclick="declineCookies()">Button</button>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("JavaScript.Message");
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookiePopup').classList.remove('show');
+    }
+
+    function declineCookies() {
+      localStorage.setItem('cookiesAccepted', 'false');
+      document.getElementById('cookiePopup').classList.remove('show');
+    }
+
+    window.onload = function () {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookiePopup').classList.add('show');
+      }
+    };
+  </script>
+</body>
+</html>

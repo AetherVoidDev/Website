@@ -162,7 +162,7 @@
     }
 
     .chat-input {
-      background-color: #1a1f2e;
+      background-color: #3c4c6e;
       border: none;
       color: white;
       outline: none;
@@ -236,16 +236,21 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <div class="container" id="top-container">
-      <button class="btn" onclick="showNotification()">Show short notification</button>
-      <button class="btn" onclick="showWideNotification()">Show wide Notification</button>
-    </div>
-
-    <div class="container" id="bottom-container">
-      <button class="btn bottom-button" onclick="window.location.href='https://aethervoiddev.github.io/Website/website/experiments/creation-studio/home.html'">Go to Creation Studio (experiment)</button>
-    </div>
+<div class="wrapper">
+  <div class="container" id="top-container">
+    <button class="btn" onclick="showNotification()">Show short notification</button>
+    <button class="btn" onclick="showWideNotification()">Show wide Notification</button>
   </div>
+
+  <div class="container" id="bottom-container" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <button class="btn" onclick="window.location.href='https://aethervoiddev.github.io/Website/website/experiments/creation-studio/home.html'">
+      Creation Studio
+    </button>
+    <button class="btn" onclick="window.location.href='https://aethervoiddev.github.io/Website/website/experiments/homepage-v2.html'">
+      HomePage V2
+    </button>
+  </div>
+</div>
 
   <div class="chat-icon-wrapper" onclick="toggleChatPopup()">
     <img src="https://aethervoiddev.github.io/Website/assets/media/icons/chat.png" alt="Chat">
@@ -272,7 +277,7 @@
       removeNotifications();
       const note = document.createElement('div');
       note.className = 'notification';
-      note.innerText = 'This is a notification';
+      note.innerText = 'This is a short notification.';
       document.body.appendChild(note);
       setTimeout(() => note.remove(), 3000);
     }
@@ -281,7 +286,7 @@
       removeNotifications();
       const wideNote = document.createElement('div');
       wideNote.className = 'wide-notification';
-      wideNote.innerText = 'This is a notification';
+      wideNote.innerText = 'This is a wide notification.';
       document.body.appendChild(wideNote);
       setTimeout(() => wideNote.remove(), 3000);
     }
