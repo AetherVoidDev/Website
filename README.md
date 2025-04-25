@@ -7,7 +7,7 @@
 | Last commit    | `25/04/2025, 22:38PM EST`                             |
 | App status         | `Development in progress`                         |
 | Team contributors         | `3`                          |
-| Repository visits         | `123`                       |
+| Repository visits         | `23`                       |
 ---
 
 ### Introduction
