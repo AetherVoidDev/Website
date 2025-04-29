@@ -1,0 +1,92 @@
+{
+  "seoManifest": {
+    "siteName": "",
+    "siteDescription": "",
+    "canonicalURL": "",
+    "language": "en-GB",
+    "region": "GB",
+    "keywords": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "author": {
+      "name": "",
+      "email": "",
+      "url": ""
+    },
+    "publisher": "",
+    "robots": {
+      "index": true,
+      "follow": true,
+      "archive": true,
+      "imageindex": true,
+      "maxSnippet": -1,
+      "maxImagePreview": "large",
+      "maxVideoPreview": -1
+    },
+    "social": {
+      "openGraph": {
+        "title": "",
+        "description": "",
+        "url": "",
+        "site_name": "",
+        "type": "website",
+        "image": ""
+      },
+      "twitterCard": {
+        "card": "summary_large_image",
+        "site": "",
+        "creator": "",
+        "title": "",
+        "description": "",
+        "image": ""
+      }
+    },
+    "schema": {
+      "@context": "",
+      "@type": "",
+      "name": "",
+      "url": "",
+      "logo": "",
+      "contactPoint": {
+        "@type": "",
+        "email": "",
+        "telephone": "",
+        "contactType": "",
+        "areaServed": "GB",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "sitemap": {
+      "url": "",
+      "priorityPages": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "hreflang": [
+      {
+        "language": "en-GB",
+        "url": ""
+      },
+      {
+        "language": "en-US",
+        "url": ""
+      }
+    ]
+  }
+}

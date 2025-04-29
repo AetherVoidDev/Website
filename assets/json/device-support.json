@@ -1,0 +1,44 @@
+{
+  "supportedDevices": [
+    {
+      "platform": "Desktop",
+      "os": "Windows",
+      "version": "7, 8, 10 & 11"
+    },
+    {
+      "platform": "Desktop",
+      "os": "macOS",
+      "version": "10.0+"
+    },
+    {
+      "platform": "Desktop",
+      "os": "Linux",
+      "version": "Kernel 5.0+"
+    },
+    {
+      "platform": "Mobile",
+      "os": "Android",
+      "version": "4.4+"
+    },
+    {
+      "platform": "Mobile",
+      "os": "IOS",
+      "version": "10+"
+    },
+    {
+      "platform": "Console",
+      "os": "PlayStation",
+      "version": "PS3, PS4 & PS5"
+    },
+    {
+      "platform": "Console",
+      "os": "Xbox",
+      "version": "360, One, One S & One X"
+    },
+    {
+      "platform": "Console",
+      "os": "Nintendo",
+      "version": "Wii, Wii U & Switch"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "siteName": "",
+  "siteDescription": "",
+  "siteURL": "",
+  "siteKeywords": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "siteAuthor": "",
+  "siteOrganisation": "",
+  "faviconPath": "",
+  "cssPaths": [
+    "",
+    "",
+    ""
+  ],
+  "jsPaths": [
+    "",
+    "",
+    ""
+  ],
+  "themeColor": "",
+  "accentColor": "",
+  "backgroundColor": "",
+  "supportEmail": "",
+  "supportPhone": "",
+  "security": {
+    "antiBot": true,
+    "antiScraper": true,
+    "antiScanner": true,
+    "blockVPN": true,
+    "blockProxies": true,
+    "blockTor": true,
+    "blockCloudHosts": [
+      "OVH",
+      "DigitalOcean",
+      "AWS",
+      "Azure",
+      "Hetzner"
+    ],
+    "protectionServices": {
+      "enabled": true,
+      "servicesUsed": [
+        "Cloudflare Bot Management",
+        "IPQualityScore VPN/Proxy Detection",
+        "FingerprintJS Bot Detection"
+      ]
+    }
+  }
+}
