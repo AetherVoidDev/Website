@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Home</title>
+  <title>Unavailable</title>
 <style>
 * {
   box-sizing: border-box;
@@ -17,22 +16,8 @@ html, body {
   background-color: #0a0f1a;
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
   display: flex;
   flex-direction: column;
-}
-    
-section {
-  margin-bottom: 1.5rem;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 nav {
@@ -41,9 +26,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: relative;
+  z-index: 2;
 }
 
 nav img {
@@ -58,403 +42,10 @@ nav img:hover {
   transform: scale(1.1);
 }
 
-.hero {
-  width: 98%;
-  min-height: 50vh;
-  height: auto;
-  margin: 1rem auto;
-  border-radius: 1.5rem;
-  background-image: url('https://aethervoiddev.github.io/Website/assets/media/hero.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-content {
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
   text-align: center;
-  padding: 2rem;
-  border-radius: 1rem;
-  z-index: 1;
-}
-
-.hero h4 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: #cccccc;
-}
-
-.hero-button {
-  display: inline-block;
-  padding: 0.6rem 1.5rem;
-  color: white;
-  border: 2px solid #1e90ff;
-  border-radius: 0.4rem;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: #1e90ff;
-  color: #ffffff;
-}
-    
-.info-section {
-  width: 98%;
-  background-color: #111624;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.info-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.info-header h4 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.info-header p {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-}
-
-.info-bar {
-  background-color: #1a1f2f;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.info-bar:hover {
-  background-color: #2a2f3f;
-  transform: translateY(-2px);
-}
-
-.bar-left {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.bar-left img {
-  width: 24px;
-  height: 24px;
-}
-
-.bar-left span {
-  font-size: 1rem;
-}
-
-.bar-right-icon {
-  width: 16px;
-  height: 16px;
-  opacity: 0.8;
-}
-    
-.card-section {
-  width: 98%;
-  background-color: #111624;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.card-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.card-header h4 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-header p {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.info-card {
-  flex: 1 1 calc(33.333% - 1rem);
-  background-color: #1a1f2f;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, background-color 0.3s ease;
-  min-width: 260px;
-  max-width: 100%;
-}
-
-.info-card:hover {
-  transform: translateY(-4px);
-  background-color: #2a2f3f;
-}
-
-.info-card img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 1rem;
-}
-
-.info-card h5 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.info-card p {
-  font-size: 0.9rem;
-  color: #bbbbbb;
-}
-    
-.download-section {
-  width: 98%;
-  background-color: #111624;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.download-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.download-header h4 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.download-header p {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-}
-
-.download-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.download-btn {
-  background-color: #1a1f2f;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.6rem;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.download-btn:hover {
-  background-color: #2a2f3f;
-  transform: translateY(-2px);
-}
-
-.download-btn img {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  vertical-align: middle;
-}
-    
-.features-section {
-  width: 98%;
-  background-color: #111624;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.features-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.features-header h4 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.features-header p {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  justify-items: stretch;
-  align-items: stretch;
-}
-
-.feature-card {
-  background-color: #1a1f2f;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-}
-
-.feature-card:hover {
-  background-color: #2a2f3f;
-  transform: translateY(-3px);
-}
-
-.feature-card img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.feature-card h5 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.feature-card p {
-  font-size: 0.9rem;
-  color: #bbbbbb;
-}
-    
-.contact-section {
-  width: 98%;
-  background-color: #111624;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  color: #ffffff;
-  text-align: center;
-}
-
-.contact-header {
-  margin-bottom: 2rem;
-}
-
-.contact-header h4 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact-header p {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
-  width: 100%;
-}
-
-.contact-input {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: none;
-  border-radius: 0.75rem;
-  background-color: #1a1f2f;
-  color: #fff;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-.contact-input::placeholder {
-  color: #888;
-}
-
-.contact-message {
-  width: 100%;
-  height: 200px;
-  padding: 1rem;
-  border: none;
-  border-radius: 0.75rem;
-  background-color: #1a1f2f;
-  color: #fff;
-  font-size: 1rem;
-  resize: none;
-  box-sizing: border-box;
-}
-
-.contact-message::placeholder {
-  color: #888;
-}
-
-.contact-footer h5 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.contact-footer p {
-  font-size: 0.9rem;
-  color: #bbbbbb;
-  margin-bottom: 1rem;
-}
-
-.contact-icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.contact-icons img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.contact-icons img:hover {
-  transform: scale(1.1);
 }
 
 footer {
@@ -464,7 +55,6 @@ footer {
   padding: 6px 10px;
   font-size: 0.85rem;
   line-height: 1.4;
-  margin-top: auto;
 }
 
 .overlay {
@@ -588,6 +178,7 @@ footer {
 }
 
 .dropdown-option {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -606,12 +197,30 @@ footer {
   background-color: #2a2f3f;
 }
 
+.search-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-dropdown::-webkit-scrollbar-thumb {
+  background-color: #3a8dff;
+  border-radius: 12px;
+  height: 30px;
+}
+
+.search-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.search-dropdown::-webkit-scrollbar-button {
+  display: none;
+}
+
 .submenu {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 0;
-  right: 185px;
+  right: 180px;
   width: 180px;
   background-color: #1a1f2f;
   border-radius: 12px;
@@ -639,127 +248,19 @@ footer {
   background-color: #2a2f3f;
 }
 
-.search-dropdown::-webkit-scrollbar {
-  width: 8px;
-}
-
-.search-dropdown::-webkit-scrollbar-thumb {
-  background-color: #3a8dff;
-  border-radius: 12px;
-  height: 30px;
-}
-
-.search-dropdown::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.search-dropdown::-webkit-scrollbar-button {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  nav {
-    padding: 6px 10px;
-    justify-content: space-around;
-  }
-
+@media (max-width: 600px) {
   nav img {
     width: 22px;
     height: 22px;
   }
 
-  .popup {
-    width: 95%;
-    max-width: 300px;
-    padding: 12px;
-  }
-
-  .dropdown,
-  .submenu,
-  .search-dropdown {
-    width: 90%;
-    min-width: unset;
-    max-width: 280px;
-    right: 5%;
-    left: 5%;
-  }
-
-  .hero, .info-section, .card-section, .download-section, .features-section, .contact-section {
-    width: 95%;
-    margin: 1rem auto;
-    padding: 1.5rem;
-  }
-
-  .hero h4 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .info-header h4,
-  .card-header h4,
-  .download-header h4,
-  .features-header h4,
-  .contact-header h4 {
-    font-size: 1.4rem;
-  }
-
-  .info-header p,
-  .card-header p,
-  .download-header p,
-  .features-header p,
-  .contact-header p {
-    font-size: 0.9rem;
-  }
-
-  .info-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-card {
-    flex: 1 1 100%;
-    min-width: 220px;
-  }
-
-  .download-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-input,
-  .contact-message {
-    width: 100%;
-  }
-
-  .contact-icons {
-    flex-wrap: wrap;
-    gap: 1.2rem;
-  }
-
-  .contact-icons img {
-    width: 24px;
-    height: 24px;
+  .main-content {
+    padding: 20px 10px;
   }
 
   footer {
     font-size: 0.75rem;
+    padding: 15px 5px;
   }
 }
 </style>
@@ -838,165 +339,10 @@ footer {
     </div>
   </nav>
 
-  <div class="hero">
-    <div class="hero-content">
-      <h4>Welcome to AetherVoid</h4>
-      <p>Ready to browse through the 'bit of everything' We have?</p>
-      <a href="https://aethervoiddev.github.io/Website/website/info/about-us.html" class="hero-button">Learn more</a>
-    </div>
+  <div class="main-content">
+    <h1>Unavailable</h1>
+    <p>The page, information or content You're looking for doesn't exist or isn't ready yet. Please come back soon.</p>
   </div>
-    
-<div class="info-section">
-  <div class="info-header">
-    <h4>Explore</h4>
-    <p>Navigate to where You want to go with ease.</p>
-  </div>
-
-  <div class="info-bar" onclick="window.open('https://aethervoiddev.github.io/Website/website/projects.html', '_blank')">
-    <div class="bar-left">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/projects.png" alt="ExploreProjects">
-      <span>Projects</span>
-    </div>
-    <img class="bar-right-icon" src="https://aethervoiddev.github.io/Website/assets/media/icons/redirect.png" alt="Arrow">
-  </div>
-
-  <div class="info-bar" onclick="window.open('https://aethervoiddev.github.io/Website/website/aethervoid-app.html', '_blank')">
-    <div class="bar-left">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/aethervoid-app.png" alt="AetherVoidApp">
-      <span>AetherVoid App</span>
-    </div>
-    <img class="bar-right-icon" src="https://aethervoiddev.github.io/Website/assets/media/icons/redirect.png" alt="Arrow">
-  </div>
-
-  <div class="info-bar" onclick="window.open('https://aethervoiddev.github.io/Website/website/explore.html', '_blank')">
-    <div class="bar-left">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/explore.png" alt="Explore">
-      <span>Explore</span>
-    </div>
-    <img class="bar-right-icon" src="https://aethervoiddev.github.io/Website/assets/media/icons/redirect.png" alt="Arrow">
-  </div>
-</div>
-    
-<section class="card-section">
-  <div class="card-header">
-    <h4>Why We're unique</h4>
-    <p>What makes Us different from other websites?</p>
-  </div>
-  <div class="card-container">
-    <div class="info-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/stack.png" alt="AIO">
-      <h5>All in one</h5>
-      <p>We target several categories of the internet, not just one!</p>
-    </div>
-    <div class="info-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/fast.png" alt="Fast">
-      <h5>Lightning fast</h5>
-      <p>Our website was made with ALL devices in mind.</p>
-    </div>
-    <div class="info-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/navigation.png" alt="Navigation">
-      <h5>Easy navigation</h5>
-      <p>Tired of getting lost in useless pages? Not on Our website!</p>
-    </div>
-  </div>
-</section>
-    
-<section class="download-section">
-  <div class="download-header">
-    <h4>Download Our app</h4>
-    <p>Select Your operating system below.</p>
-  </div>
-  <div class="download-buttons">
-    <a href="https://aethervoiddev.github.io/Website/website/unavailable.html" class="download-btn">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/windows.png" alt="Download">
-      Windows
-    </a>
-    <a href="https://aethervoiddev.github.io/Website/website/unavailable.html" class="download-btn">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/macos.png" alt="Download">
-      MacOS
-    </a>
-    <a href="https://aethervoiddev.github.io/Website/website/unavailable.html" class="download-btn">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/linux.png" alt="Download">
-      Linux
-    </a>
-    <a href="https://aethervoiddev.github.io/Website/website/unavailable.html" class="download-btn">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/android.png" alt="Download">
-      Android
-    </a>
-    <a href="https://aethervoiddev.github.io/Website/website/unavailable.html" class="download-btn">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/ios.png" alt="Download">
-      IOS
-    </a>
-    <a href="https://aethervoiddev.github.io/Website/website/unavailable.html" class="download-btn">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/other.png" alt="Download">
-      Other
-    </a>
-  </div>
-</section>
-    
-<section class="features-section">
-  <div class="features-header">
-    <h4>Users thoughts</h4>
-    <p>See for Yourself why Everyone keeps coming back</p>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/comment.png" alt="Comment">
-      <h5>Owen (surname, age & location hidden)</h5>
-      <p>Great website and easy access to everything, good design</p>
-    </div>
-    <div class="feature-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/comment.png" alt="Comment">
-      <h5>Camilla Newman, 27, London</h5>
-      <p>Not too fond of the colour scheme but other than that an amazing website!</p>
-    </div>
-    <div class="feature-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/comment.png" alt="Comment">
-      <h5>Josh Roberts, Mansfield</h5>
-      <p>Known the developer of the site for a while so not surprised this site is epic</p>
-    </div>
-    <div class="feature-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/comment.png" alt="Comment">
-      <h5>Mia Carpenter, 21, Derby</h5>
-      <p>Appealing to look at, easy to find what I want and overall a good website</p>
-    </div>
-    <div class="feature-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/comment.png" alt="Comment">
-      <h5>Jenson Bailey, 24, Birmingham</h5>
-      <p>I like the dark blue and light blue, goes very well together, easy on the eyes</p>
-    </div>
-    <div class="feature-card">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/comment.png" alt="Comment">
-      <h5>Paul Anthony, 45, Tokyo</h5>
-      <p>I can't keep up with the daily commits on GitHub haha, there's always something new</p>
-    </div>
-  </div>
-</section>
-    
-<section class="contact-section">
-  <div class="contact-header">
-    <h4>Get in contact</h4>
-    <p>Have a question You'd like to ask? Feel free to contact Us!</p>
-  </div>
-
-  <div class="contact-form">
-    <input type="text" class="contact-input" placeholder="Your Name" />
-    <input type="email" class="contact-input" placeholder="Your Email" />
-    <textarea class="contact-message" placeholder="Your Message"></textarea>
-  </div>
-
-  <div class="contact-footer">
-    <h5>Want to stay up-to-date?</h5>
-    <p>Follow Us on social media for more exciting news and updates!</p>
-    <div class="contact-icons">
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/facebook.png" alt="Facebook" />
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/instagram.png" alt="Instagram" />
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/x.png" alt="X" />
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/discord.png" alt="Discord" />
-      <img src="https://aethervoiddev.github.io/Website/assets/media/icons/youtube.png" alt="YouTube" />
-    </div>
-  </div>
-</section>
 
 <div class="overlay" id="popup-overlay">
   <div class="popup">
@@ -1051,7 +397,6 @@ footer {
       { name: "Content", link: "https://aethervoiddev.github.io/Website/website/content/explore-content.html" },
       { name: "Tools", link: "https://aethervoiddev.github.io/Website/website/tools/explore-tools.html" },
       { name: "Store", link: "https://aethervoiddev.github.io/Website/website/store/explore-store.html" },
-      { name: "Experiments", link: "https://aethervoiddev.github.io/Website/website/experiments/experiments.html" },
       { name: "More", link: "https://aethervoiddev.github.io/Website/website/more/explore-more.html" },
       { name: "Our App", link: "https://aethervoiddev.github.io/Website/website/aethervoid-app.html" },
       { name: "Info", link: "https://aethervoiddev.github.io/Website/website/info/about-us.html" },
