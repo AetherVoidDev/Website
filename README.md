@@ -4,7 +4,7 @@
 | Repository size     | `2.8MB`                               |
 | Forks         | `1`                              |
 | Stars                 | `0`                               |
-| Last commit    | `27/04/2025, 15:34PM EST`                             |
+| Last commit    | `29/04/2025, 16:23PM EST`                             |
 | App status         | `Development in progress`                         |
 | Team contributors         | `3`                          |
 | Repository visits         | `24`                       |
@@ -54,13 +54,13 @@ If You've found an issue or a bug, please report it via issues or using the cont
 ---
 
 ### Socials & Contact
-[Facebook](https://google.com/404)  
-[Instagram](https://google.com/404)  
+[Facebook](https://www.facebook.com/aethervoiddev)  
+[Instagram](https://www.instagram.com/aethervoiddev/)  
 [Threads](https://google.com/404)  
 [X](https://google.com/404)  
 [SnapChat](https://google.com/404)  
 [TikTok](https://google.com/404)  
-[Discord](https://google.com/404)  
-[YouTube](https://google.com/404)  
+[Discord Server](https://discord.gg/HRKmde3nsW)  
+[YouTube](https://youtube.com/@AetherVoidDev)  
 
-[Email](https://google.com/404)  
+[aethervoid.dev@gmail.com](https://gmail.com)  
